@@ -1,0 +1,119 @@
+2025-11-05 21:03:33,719 - __main__ - INFO - ブラウザを起動中...
+2025-11-05 21:03:37,918 - __main__ - INFO - ブラウザの初期化が完了しました
+2025-11-05 21:03:37,928 - __main__ - INFO - ============================================================
+2025-11-05 21:03:37,928 - __main__ - INFO - テストデータを生成中...
+2025-11-05 21:03:37,928 - __main__ - INFO - ============================================================
+2025-11-05 21:03:37,929 - __main__ - INFO - 生成されたデータ:
+2025-11-05 21:03:37,929 - __main__ - INFO -   ニックネーム: けんけん
+2025-11-05 21:03:37,929 - __main__ - INFO -   姓名: 木村 智子
+2025-11-05 21:03:37,929 - __main__ - INFO -   郵便番号: 153-0064
+2025-11-05 21:03:37,929 - __main__ - INFO -   住所: 東京都目黒区下目黒
+2025-11-05 21:03:37,929 - __main__ - INFO - ============================================================
+2025-11-05 21:03:37,929 - __main__ - INFO - 捨てメアドで期限つきアドレスを作成中...
+2025-11-05 21:03:37,929 - __main__ - INFO - ============================================================
+2025-11-05 21:03:38,063 - src.temp_mail - INFO - 捨てメアドサイトにアクセス中...
+2025-11-05 21:03:46,138 - src.temp_mail - INFO - 期限つきの使い捨てアドレスを追加ボタンをクリック...
+2025-11-05 21:03:48,237 - src.temp_mail - INFO - 利用規約に同意...
+2025-11-05 21:03:51,263 - src.temp_mail - INFO - アドレスをコピー...
+2025-11-05 21:03:53,745 - src.temp_mail - INFO - 作成されたメールアドレス: kogyu747@svk.jp
+2025-11-05 21:03:53,746 - __main__ - INFO - 作成されたメールアドレス: kogyu747@svk.jp
+2025-11-05 21:03:55,748 - __main__ - INFO - ============================================================
+2025-11-05 21:03:55,752 - __main__ - INFO - TIF Streamingサイトでメールアドレスを登録中...
+2025-11-05 21:03:55,753 - __main__ - INFO - ============================================================
+2025-11-05 21:03:55,763 - src.registration - INFO - TIF Streaming登録ページにアクセス...
+2025-11-05 21:03:55,765 - src.registration - INFO - 現在のURL: about:blank
+2025-11-05 21:03:55,766 - src.registration - INFO - TIF Streamingサイトに遷移します: https://official.idolfes.com/s/tifst/member/add?ima=0000
+2025-11-05 21:04:00,448 - src.registration - INFO - メールアドレスを入力...
+2025-11-05 21:04:01,501 - src.registration - INFO - 利用規約に同意...
+2025-11-05 21:04:03,565 - src.registration - INFO - 送信ボタンが有効になりました
+2025-11-05 21:04:03,575 - src.registration - INFO - メールアドレスを送信...
+2025-11-05 21:04:05,234 - src.registration - INFO - メールアドレスの送信が完了しました（URL変化を検出）
+2025-11-05 21:04:05,234 - __main__ - INFO - ============================================================
+2025-11-05 21:04:05,234 - __main__ - INFO - 検証メールの受信を待機中...
+2025-11-05 21:04:05,234 - __main__ - INFO - ============================================================
+2025-11-05 21:04:10,239 - src.temp_mail - INFO - 受信トレイにアクセス...
+2025-11-05 21:04:43,289 - src.temp_mail - INFO - 受信トレイにアクセス...
+2025-11-05 21:04:47,630 - src.temp_mail - INFO - メール受信を確認中... (0秒経過)
+2025-11-05 21:04:47,680 - src.temp_mail - INFO - 検証メールを発見しました
+2025-11-05 21:04:51,790 - src.temp_mail - INFO - 検証URL: https://official.idolfes.com/s/tifst/check/dbc528610566176a
+2025-11-05 21:04:51,791 - __main__ - INFO - 検証URL: https://official.idolfes.com/s/tifst/check/dbc528610566176a
+2025-11-05 21:04:56,068 - __main__ - INFO - ============================================================
+2025-11-05 21:04:56,069 - __main__ - INFO - 会員情報を入力中...
+2025-11-05 21:04:56,069 - __main__ - INFO - ============================================================
+2025-11-05 21:04:56,070 - src.registration - INFO - 会員情報入力フォームに入力中...
+2025-11-05 21:05:49,883 - src.registration - INFO - 会員情報入力フォームに入力中...
+2025-11-05 21:06:43,700 - src.registration - INFO - 会員情報入力フォームに入力中...
+2025-11-05 21:07:36,882 - __main__ - ERROR - エラーが発生しました: RetryError[<Future at 0x10705bfd0 state=finished raised TimeoutError>]
+Traceback (most recent call last):
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.cursor/worktrees/voteBot/R1AYX/src/registration.py", line 281, in fill_registration_form
+    await gender_radio.check()
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/playwright/async_api/_generated.py", line 15370, in check
+    await self._impl_obj.check(
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/playwright/_impl/_locator.py", line 145, in check
+    return await self._frame.check(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/playwright/_impl/_frame.py", line 741, in check
+    await self._channel.send("check", locals_to_params(locals()))
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.check: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[name=\"13\"][value=\"2\"]")
+    - locator resolved to <input name="13" value="2" type="radio" id="CpRadioBtns_13_2" class="CpBaseRadioBtn__input"/>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    58 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/kou1904/.cursor/worktrees/voteBot/R1AYX/src/main.py", line 166, in run
+    await registration_service.fill_registration_form(test_data, password)
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/tenacity/asyncio/__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/tenacity/_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kou1904/.pyenv/versions/3.11.0/lib/python3.11/site-packages/tenacity/__init__.py", line 419, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x10705bfd0 state=finished raised TimeoutError>]
+2025-11-05 21:07:37,578 - __main__ - INFO - エラー時のスクリーンショットを保存しました: error_screenshot.png
+2025-11-05 21:07:39,580 - __main__ - INFO - ============================================================
+2025-11-05 21:07:39,580 - __main__ - INFO - テストデータを生成中...
+2025-11-05 21:07:39,580 - __main__ - INFO - ============================================================
+2025-11-05 21:07:39,581 - __main__ - INFO - 生成されたデータ:
+2025-11-05 21:07:39,581 - __main__ - INFO -   ニックネーム: Shin
+2025-11-05 21:07:39,581 - __main__ - INFO -   姓名: 山口 大輔
+2025-11-05 21:07:39,581 - __main__ - INFO -   郵便番号: 324-0047
+2025-11-05 21:07:39,581 - __main__ - INFO -   住所: 栃木県大田原市美原
+2025-11-05 21:07:39,581 - __main__ - INFO - ============================================================
+2025-11-05 21:07:39,581 - __main__ - INFO - 捨てメアドで期限つきアドレスを作成中...
+2025-11-05 21:07:39,581 - __main__ - INFO - ============================================================
+2025-11-05 21:07:40,001 - src.temp_mail - INFO - 捨てメアドサイトにアクセス中...
+2025-11-05 21:07:48,369 - src.temp_mail - INFO - 期限つきの使い捨てアドレスを追加ボタンをクリック...
+2025-11-05 21:07:50,604 - src.temp_mail - INFO - 利用規約に同意...
+2025-11-05 21:08:26,620 - src.temp_mail - INFO - 捨てメアドサイトにアクセス中...
