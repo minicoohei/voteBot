@@ -1,0 +1,4 @@
+# VoteBot
+
+Vote bot application
+
